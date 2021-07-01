@@ -1,5 +1,20 @@
+console.log(`Задание 1`);
+
 const delay = ms => {
-  // Твой код
+   setTimeout(() => {
+      console.log(Promise.resolve(ms));
+      return Promise.resolve(ms);
+    }, ms)
+   
+   return Promise.resolve(ms);
+   
+   // new Promise((resolve) => {
+   //    setTimeout(() => {
+   //       console.log(Promise.resolve(ms));
+   //       return Promise.resolve(ms)
+   //    }, ms)
+   //    return Promise.resolve(ms);
+   // })
 };
 
 const logger = time => console.log(`Resolved after ${time}ms`);
