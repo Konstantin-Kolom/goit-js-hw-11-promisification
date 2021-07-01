@@ -1,4 +1,4 @@
-console.log(`Задание 1`);
+// console.log(`Задание 1`);
 
 const delay = ms => {
    setTimeout(() => {
@@ -14,7 +14,7 @@ const delay = ms => {
    //       return Promise.resolve(ms)
    //    }, ms)
    //    return Promise.resolve(ms);
-   // })
+   // }) 
 };
 
 const logger = time => console.log(`Resolved after ${time}ms`);

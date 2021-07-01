@@ -1,4 +1,4 @@
-console.log(`Задание 2`);
+// console.log(`Задание 2`);
 
 // const users = [
 //   { name: 'Mango', active: true },
