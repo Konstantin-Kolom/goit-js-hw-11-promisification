@@ -1,4 +1,4 @@
-console.log(`Задание 2`);
+// console.log(`Задание 2`);
 
 const users = [
   { name: 'Mango', active: true },
@@ -23,8 +23,8 @@ const logger = updatedUsers => console.table(updatedUsers);
 /*
  * Сейчас работает так
  */
-toggleUserState(users, 'Mango', logger);
-toggleUserState(users, 'Lux', logger);
+// toggleUserState(users, 'Mango', logger);
+// toggleUserState(users, 'Lux', logger);
 
 /*
  * Должно работать так

@@ -1,4 +1,4 @@
- console.log(`Задание 1`); 
+//  console.log(`Задание 1`); 
 
 const delay = ms => {
    const promise = new Promise((resolve) => {
