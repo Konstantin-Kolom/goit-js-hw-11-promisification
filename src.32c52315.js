@@ -1,8 +1,10 @@
 parcelRequire=function(e,r,t,n){var i,o="function"==typeof parcelRequire&&parcelRequire,u="function"==typeof require&&require;function f(t,n){if(!r[t]){if(!e[t]){var i="function"==typeof parcelRequire&&parcelRequire;if(!n&&i)return i(t,!0);if(o)return o(t,!0);if(u&&"string"==typeof t)return u(t);var c=new Error("Cannot find module '"+t+"'");throw c.code="MODULE_NOT_FOUND",c}p.resolve=function(r){return e[t][1][r]||r},p.cache={};var l=r[t]=new f.Module(t);e[t][0].call(l.exports,p,l,l.exports,this)}return r[t].exports;function p(e){return f(p.resolve(e))}}f.isParcelRequire=!0,f.Module=function(e){this.id=e,this.bundle=f,this.exports={}},f.modules=e,f.cache=r,f.parent=o,f.register=function(r,t){e[r]=[function(e,r){r.exports=t},{}]};for(var c=0;c<t.length;c++)try{f(t[c])}catch(e){i||(i=e)}if(t.length){var l=f(t[t.length-1]);"object"==typeof exports&&"undefined"!=typeof module?module.exports=l:"function"==typeof define&&define.amd?define(function(){return l}):n&&(this[n]=l)}if(parcelRequire=f,i)throw i;return f}({"DOAq":[function(require,module,exports) {
 
 },{}],"R6JV":[function(require,module,exports) {
-const e=e=>(setTimeout(()=>(console.log(Promise.resolve(e)),Promise.resolve(e)),e),Promise.resolve(e)),o=e=>console.log(`Resolved after ${e}ms`);e(2e3).then(o),e(1e3).then(o),e(1500).then(o);
+console.log("Задание 1");const e=e=>{return new Promise(o=>{setTimeout(()=>{o(e)},e)})},o=e=>console.log(`Resolved after ${e}ms`);e(2e3).then(o),e(1e3).then(o),e(1500).then(o);
+},{}],"F4pE":[function(require,module,exports) {
+console.log("Задание 2");const e=[{name:"Mango",active:!0},{name:"Poly",active:!1},{name:"Ajax",active:!0},{name:"Lux",active:!1}],a=(e,a)=>{return new Promise(n=>{n(e.map(e=>e.name===a?{...e,active:!e.active}:e))})},n=e=>console.table(e);a(e,"Mango"),a(e,"Lux"),a(e,"Mango").then(n),a(e,"Lux").then(n);
 },{}],"Focm":[function(require,module,exports) {
 "use strict";require("../node_modules/normalize.css/normalize.css"),require("./js/them1.js"),require("./js/them2.js"),require("./js/them3.js");
-},{"../node_modules/normalize.css/normalize.css":"DOAq","./js/them1.js":"R6JV","./js/them2.js":"DOAq","./js/them3.js":"DOAq"}]},{},["Focm"], null)
-//# sourceMappingURL=/goit-js-hw-11-promisification/src.ebb70f9c.js.map
+},{"../node_modules/normalize.css/normalize.css":"DOAq","./js/them1.js":"R6JV","./js/them2.js":"F4pE","./js/them3.js":"DOAq"}]},{},["Focm"], null)
+//# sourceMappingURL=/goit-js-hw-11-promisification/src.32c52315.js.map
